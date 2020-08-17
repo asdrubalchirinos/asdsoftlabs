@@ -512,7 +512,7 @@ i18njs.add('es', 'root', es_locales);
                     // btn.prop('disabled', true);
                 },
                 success: function (response) {
-                    if (response.code === 200) {
+                    if (response.ok) {
                         $("#emailForm").fadeOut("slow", function () {
                             $("#thanksForm").fadeIn();
                         });
