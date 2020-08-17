@@ -504,7 +504,7 @@ i18njs.add('es', 'root', es_locales);
             $.ajax({
                 contentType: 'application/x-www-form-urlencoded',
                 type: 'POST',
-                url: 'send.php',
+                url: 'https://formspree.io/mlepkenl',
                 data: ($("#emailForm")).serialize(),
                 beforeSend: function () {
                     // var btn = $('#btnContactUs');
