@@ -208,7 +208,7 @@ var es_locales = {
         },
         'fab': {
             'name': 'Fabiola Márquez',
-            'role': 'Gerente de reclutamineto',
+            'role': 'Gerente de reclutamiento',
             'bio': 'Reclutador de IT, especialista en adquisición de talentos',
         },
         'bea': {
