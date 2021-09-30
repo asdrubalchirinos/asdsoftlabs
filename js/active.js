@@ -39,7 +39,7 @@ var en_locales = {
             'body': 'Go beyond a brochure website. Modern web design should call your clients to action interacting with your business and services.'
         },
         'recruting': {
-            'title': 'IT Recruting',
+            'title': 'IT Recruiting',
             'body': 'Let us take care of the scouting and management of the best talent for your needs in the development of modern applications.'
         },
         'linux': {
