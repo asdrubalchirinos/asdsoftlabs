@@ -5,9 +5,14 @@ Author URI: http://themelamp.com/
 Description: Precon is a Multipurpose Business HTML5 Template.
 Version:	1.0
 ========================================*/
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
+import i18njs from 'i18njs';
 
-var i18njs = require('i18njs');
+import '../css/custom/reset.css';
+import '../css/custom/style.css';
+import '../css/custom/responsive.css';
+import '../css/custom/skin1.css';
+import '../css/custom/menu.css';
 
 var en_locales = {
     'menu': {
@@ -44,7 +49,7 @@ var en_locales = {
         },
         'linux': {
             'title': 'Cloud & Virtualization Solutions',
-            'body': 'From a locally managed IT environment, maintaining cloud datacenters or administering virtual servers and applications, we got you cover.'
+            'body': 'From a locally managed IT environment, maintaining cloud datacenters or administering virtual servers and applications, we got you covered.'
         },
         'consulting': {
             'title': 'Consulting',
@@ -86,11 +91,6 @@ var en_locales = {
             'role': 'CEO, Development Manager',
             'bio': 'Web Development Coach. Leading teams to success. Full Stack Developer',
         },
-        'ger': {
-            'name': 'German Cardozo',
-            'role': 'UNIX/Linux Expert',
-            'bio': 'Virtualization & Development Specialist. DevOps & Automation Consultant.',
-        },
         'fab': {
             'name': 'Fabiola Márquez',
             'role': 'Recruitment Manager',
@@ -98,8 +98,8 @@ var en_locales = {
         },
         'bea': {
             'name': 'Beatriz Márquez',
-            'role': 'Bussiness Manager',
-            'bio': 'Bussiness and Project Managment consultor',
+            'role': 'Business Manager',
+            'bio': 'Business and Project Management consultant',
         }
     },
     'contact': {
@@ -120,7 +120,8 @@ var en_locales = {
             'title': 'Thanks for reaching us',
             'body': 'We\'ll get back to you soon!'
         },
-        'required': "This field is required."
+        'required': "This field is required.",
+        'error': "Something went wrong, please retry."
     }
 };
 
@@ -147,7 +148,7 @@ var es_locales = {
         'phrase': 'Análisis, diseño, desarrollo, pruebas y despliegue',
         'dev': {
             'title': 'Desarrollos Web/Móvil',
-            'body': 'Nos centramos en ofrecer soluciones modernas, utilizando las mejores prácticas y las tecnologías más reconicidas y actuales en el mercado.'
+            'body': 'Nos centramos en ofrecer soluciones modernas, utilizando las mejores prácticas y las tecnologías más reconocidas y actuales en el mercado.'
         },
         'design': {
             'title': 'Diseño Web',
@@ -195,16 +196,11 @@ var es_locales = {
     },
     'team': {
         'title': '<span>El equipo</span>Conócenos',
-        'phrase': 'Las caras detras de nuestra firma',
+        'phrase': 'Las caras detrás de nuestra firma',
         'asd': {
             'name': 'Asdrúbal Chirinos',
             'role': 'CEO, Gerente de desarrollo',
             'bio': 'Liderando equipos hacia el éxito. Consultor  y desarrollador Full Stack',
-        },
-        'ger': {
-            'name': 'German Cardozo',
-            'role': 'Experto UNIX/Linux',
-            'bio': 'Especialista en virtualización y desarrollo. Consultor en desarrollo y automatización.',
         },
         'fab': {
             'name': 'Fabiola Márquez',
@@ -235,7 +231,8 @@ var es_locales = {
             'title': 'Gracias por contactarnos',
             'body': 'Pronto nos estaremos contactando contigo.'
         },
-        'required': "Este campo es obligatorio."
+        'required': "Este campo es obligatorio.",
+        'error': "Algo salió mal, por favor inténtalo de nuevo."
     }
 };
 
@@ -244,7 +241,7 @@ i18njs.add('es', 'root', es_locales);
 
 (function ($) {
     "use strict";
-    $(document).on('ready', function () {
+    $(function () {
 
 
 		/*====================================
@@ -494,39 +491,41 @@ i18njs.add('es', 'root', es_locales);
     })
 
     /*====================================
-        Submit Form
+        Submit Form (Formspree)
     ======================================*/
 
-    $("#submitButton").click(function (e) {
+    $("#emailForm").on('submit', function (e) {
         e.preventDefault();
 
-        if ($("#emailForm").valid())
-            $.ajax({
-                contentType: 'application/x-www-form-urlencoded',
-                type: 'POST',
-                url: 'https://formspree.io/mlepkenl',
-                data: ($("#emailForm")).serialize(),
-                beforeSend: function () {
-                    // var btn = $('#btnContactUs');
-                    // btn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>enviando...');
-                    // btn.prop('disabled', true);
-                },
-                success: function (response) {
-                    if (response.ok) {
-                        $("#emailForm").fadeOut("slow", function () {
-                            $("#thanksForm").fadeIn();
-                        });
-                    } else {
-                        alert("Something went wrong please retry")
-                    }
-                },
-                complete: function () {
-                    $("#emailForm").fadeOut("slow", function () {
-                        $("#thanksForm").fadeIn();
+        if (!$(this).valid()) {
+            return;
+        }
+
+        var $form = $(this);
+        var $btn = $("#submitButton");
+        $btn.prop('disabled', true);
+
+        $.ajax({
+            contentType: 'application/x-www-form-urlencoded',
+            type: 'POST',
+            url: 'https://formspree.io/mlepkenl',
+            data: $form.serialize(),
+            dataType: 'json',
+            success: function (response) {
+                if (response && (response.ok === true || response.success === true)) {
+                    $form.fadeOut('slow', function () {
+                        $('#thanksForm').fadeIn();
                     });
-                },
-                dataType: 'json'
-            });
+                } else {
+                    alert(i18njs.get('root.contact.error') || 'Something went wrong, please retry');
+                    $btn.prop('disabled', false);
+                }
+            },
+            error: function () {
+                alert(i18njs.get('root.contact.error') || 'Something went wrong, please retry');
+                $btn.prop('disabled', false);
+            }
+        });
     });
 
 
@@ -538,7 +537,7 @@ i18njs.add('es', 'root', es_locales);
     /*====================================
         Preloader JS
     ======================================*/
-    $(window).load(function () {
+    $(window).on('load', function () {
         $('.preloader-main').fadeOut('slow', function () {
             $(this).remove();
         });

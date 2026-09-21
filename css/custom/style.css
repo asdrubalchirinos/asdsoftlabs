@@ -822,7 +822,7 @@ Version:	1.0
 /* Style Two */
 
 .hero-area.style2 {
-    background-image: url('../../images/world-map.png');
+    background-image: url('/images/world-map.png');
     background-size: contain;
     background-position: center;
     background-color: #fff;
@@ -3988,7 +3988,7 @@ Version:	1.0
 .pattern-1 {
     background-size: contain;
     /* background-repeat: no-repeat; */
-    background-image: url('../../images/bg-pattern/bg-pattern-1.png');
+    background-image: url('/images/bg-pattern/bg-pattern-1.png');
 }
 
 /* Contact Form */
@@ -4181,7 +4181,7 @@ Version:	1.0
 
 .footer {
     background-color: #2A2D2F;
-    background-image: url('../../images/world-map.png');
+    background-image: url('/images/world-map.png');
 }
 
 .footer .footer-top {
