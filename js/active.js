@@ -23,6 +23,7 @@ var en_locales = {
         'approach': 'Approach',
         'team': 'Team',
         'work': 'Work',
+        'faq': 'FAQ',
         'contact': 'Contact',
         'lang': 'Español'
     },
@@ -41,6 +42,19 @@ var en_locales = {
     },
     'footer': {
         'blog': 'Our take on AI &amp; software: <a class="nowrap" href="https://www.codigoergosum.com/blog/" target="_blank" rel="noopener">Código Ergo Sum</a>'
+    },
+    'faq': {
+        'title': '<span>FAQ</span>Common questions',
+        'q1': 'What does Asdsoft Labs do?',
+        'a1': "A boutique senior team that bridges business and code: web and mobile products, UX/UI, IT recruiting, SEO, and AI agents & automations with human oversight.",
+        'q2': 'Where is Asdsoft Labs located?',
+        'a2': "We're based in Aguascalientes, Mexico, and work with clients worldwide.",
+        'q3': 'Do you use AI to build software?',
+        'a3': 'Yes—to ship faster. Architecture, security, and QA stay under senior human review. We also build AI agents and automations with human oversight on critical steps.',
+        'q4': 'Do you offer IT recruiting?',
+        'a4': 'Yes. We source, screen, and manage tech talent for your team, from developers to specialists.',
+        'q5': 'How can I contact you?',
+        'a5': 'Call +(52) 55 6482 3442 or use the contact form below.'
     },
     'action': {
         'title': 'Have a product worth building? Let\'s talk.',
@@ -160,6 +174,7 @@ var es_locales = {
         'approach': 'Enfoque',
         'team': 'Equipo',
         'work': 'Proyectos',
+        'faq': 'Preguntas',
         'contact': 'Contacto',
         'lang': 'English'
     },
@@ -178,6 +193,19 @@ var es_locales = {
     },
     'footer': {
         'blog': 'Nuestra visión de IA y software: <a class="nowrap" href="https://www.codigoergosum.com/blog/" target="_blank" rel="noopener">Código Ergo Sum</a>'
+    },
+    'faq': {
+        'title': '<span>Preguntas</span>Preguntas frecuentes',
+        'q1': '¿Qué hace Asdsoft Labs?',
+        'a1': 'Un equipo boutique senior que conecta negocio y código: productos web y móvil, UX/UI, reclutamiento IT, SEO y agentes y automatizaciones IA con supervisión humana.',
+        'q2': '¿Dónde está Asdsoft Labs?',
+        'a2': 'Estamos en Aguascalientes, México, y trabajamos con clientes de todo el mundo.',
+        'q3': '¿Usan IA para construir software?',
+        'a3': 'Sí—para entregar más rápido. Arquitectura, seguridad y QA quedan bajo revisión humana senior. También construimos agentes y automatizaciones IA con supervisión en cada paso crítico.',
+        'q4': '¿Ofrecen reclutamiento IT?',
+        'a4': 'Sí. Buscamos, evaluamos y gestionamos el talento tech para tu equipo, desde desarrolladores hasta especialistas.',
+        'q5': '¿Cómo los contacto?',
+        'a5': 'Llama al +(52) 55 6482 3442 o usa el formulario de contacto.'
     },
     'action': {
         'title': '¿Tienes un producto que vale la pena construir? Hablemos.',
