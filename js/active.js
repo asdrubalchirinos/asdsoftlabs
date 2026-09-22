@@ -526,6 +526,7 @@ i18njs.add('es', 'root', es_locales);
     }
 
     i18njs.setLang(lang);
+    document.documentElement.lang = lang;
 
     $("[data-i18n]").each(function (index, value) {
         var label = $(value).data("i18n");
