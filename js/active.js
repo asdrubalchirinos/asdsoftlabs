@@ -17,19 +17,33 @@ import '../css/custom/menu.css';
 var en_locales = {
     'menu': {
         'up': 'Top',
-        'about': 'About Us',
-        'services': 'Our Services',
-        'whyus': 'Why choose us',
-        'contact': 'Contact us',
+        'about': 'About',
+        'services': 'Services',
+        'whyus': 'Why Us',
+        'approach': 'Approach',
+        'team': 'Team',
+        'work': 'Work',
+        'contact': 'Contact',
         'lang': 'Español'
     },
     'aboutus': {
         'header': "About Us",
-        'title': "We are <span>passionate</span> about solutions",
-        'body': "We are a small firm yet dedicated to providing modern, scalable, secure and flexible web/mobile solutions. We offer services made with quality and passion for your business needs."
+        'title': "A <span>boutique</span> team for your product",
+        'body': "Senior people, direct communication, no layers. We bridge business and code for teams building real products—web and mobile, IT talent and AI automations, always with human oversight."
+    },
+    'work': {
+        'title': '<span>Selected work</span>What we ship',
+        'phrase': 'Real products you can try today',
+        'p1': {
+            'title': 'P1 Express App',
+            'body': 'Our minimalist planning app: offline-first, zero dependencies, philosophy in code. A real example of Personal Software—tools shaped to the person, not the other way around.'
+        }
+    },
+    'footer': {
+        'blog': 'Our take on AI &amp; software: <a class="nowrap" href="https://www.codigoergosum.com/blog/" target="_blank" rel="noopener">Código Ergo Sum</a>'
     },
     'action': {
-        'title': 'Are you looking for a reliable team to develop your project?',
+        'title': 'Have a product worth building? Let\'s talk.',
         'msg': 'Let us know more about your idea and we will bring it to life!'
     },
     'services': {
@@ -37,27 +51,23 @@ var en_locales = {
         'phrase': 'We Analyze, Design, Build, Test & Deploy',
         'dev': {
             'title': 'Web/Mobile Development',
-            'body': 'We are focused on delivering cutting-edge solutions and best practices. Using the latest and most widely adopted technologies on the market.'
+            'body': 'We design, build and ship web and mobile products with modern stacks, clear delivery and code your team can own.'
         },
         'design': {
-            'title': 'Web Design',
-            'body': 'Go beyond a brochure website. Modern web design should call your clients to action interacting with your business and services.'
+            'title': 'UX/UI & Web Design',
+            'body': 'Interfaces that guide users to action: research, wireframes and visual design focused on conversion, not just looks.'
         },
         'recruting': {
             'title': 'IT Recruiting',
-            'body': 'Let us take care of the scouting and management of the best talent for your needs in the development of modern applications.'
-        },
-        'linux': {
-            'title': 'Cloud & Virtualization Solutions',
-            'body': 'From a locally managed IT environment, maintaining cloud datacenters or administering virtual servers and applications, we got you covered.'
-        },
-        'consulting': {
-            'title': 'Consulting',
-            'body': "We'll listen, consider your business model, understand your audiences, competition and everything that plays a role in your project in order to partner with you in achieving success."
+            'body': 'We source, screen and manage the right tech talent for your team, from developers to specialists.'
         },
         'seo': {
-            'title': 'Search Engine Optimization',
-            'body': 'We help you achieve more sales and more money for your business by improving your website visibility in search engines'
+            'title': 'SEO & AI Search Visibility',
+            'body': 'Get found on Google and in AI answers. Technical SEO, content structure and tracking that turns visibility into leads.'
+        },
+        'ai': {
+            'title': 'AI Agents & Automations',
+            'body': 'Chatbots, lead qualification and workflow automations integrated into your tools, with human oversight on every critical step.'
         },
     },
     'whyus': {
@@ -74,13 +84,29 @@ var en_locales = {
             'title': 'Agile Mindset',
             'body': 'We work with agile methodologies guaranteeing functional deliveries in each work sprint.'
         },
-        'dailies': {
-            'title': 'Daily Standups',
-            'body': 'Daily stand-ups among the development team to check the status of each task.'
+        'ai': {
+            'title': 'AI-Assisted Delivery',
+            'body': 'We use AI to ship faster; architecture, security and QA stay under senior human review.'
         },
         'project': {
             'title': 'Project Checks',
             'body': 'Ongoing validation of the project, including your criteria as a <span>product owner</span>.'
+        },
+    },
+    'approach': {
+        'title': '<span>Our approach</span>We bridge business and code',
+        'phrase': 'Between those who dream and those who build',
+        'purpose': {
+            'title': 'Purpose first',
+            'body': 'We start with why. Every feature traces back to a real business goal—not a wish list.'
+        },
+        'bridge': {
+            'title': 'Vision meets execution',
+            'body': "We connect stakeholders and developers so ideas don't get lost between slides and code."
+        },
+        'together': {
+            'title': 'Business and code, together',
+            'body': 'Aligned teams, shared purpose, and products that move the business forward.'
         },
     },
     'team': {
@@ -88,17 +114,17 @@ var en_locales = {
         'phrase': 'Meet the faces of our organization',
         'asd': {
             'name': 'Asdrúbal Chirinos',
-            'role': 'CEO, Development Manager',
+            'role': 'CEO & Founder',
             'bio': 'Web Development Coach. Leading teams to success. Full Stack Developer',
         },
         'fab': {
             'name': 'Fabiola Márquez',
-            'role': 'Recruitment Manager',
+            'role': 'Talent Lead',
             'bio': 'IT Recruiter, Talent Acquisition Specialist, Head Hunter',
         },
         'bea': {
             'name': 'Beatriz Márquez',
-            'role': 'Business Manager',
+            'role': 'Business Lead',
             'bio': 'Business and Project Management consultant',
         }
     },
@@ -127,48 +153,58 @@ var en_locales = {
 
 var es_locales = {
     'menu': {
-        'up': "Volver al inicio",
+        'up': "Inicio",
         'about': 'Nosotros',
         'services': 'Servicios',
-        'whyus': 'Porque elegirnos',
-        'contact': 'Contáctenos',
+        'whyus': 'Por qué elegirnos',
+        'approach': 'Enfoque',
+        'team': 'Equipo',
+        'work': 'Proyectos',
+        'contact': 'Contacto',
         'lang': 'English'
     },
     'aboutus': {
         'header': "Sobre nosotros",
-        'title': "Nos <span>apasiona</span> dar soluciones",
-        'body': "Somos una empresa pequeña pero dedicada a proveer soluciones modernas, escalables, seguras y flexibles en desarrollo web/móvil. Ofrecemos servicios hechos con calidad y pasión para las necesidades de su negocio."
+        'title': "Un equipo <span>boutique</span> para tu producto",
+        'body': "Gente senior, comunicación directa, sin capas intermedias. Conectamos negocio y código con equipos que construyen productos reales—web y móvil, talento IT y automatizaciones con IA, siempre con supervisión humana."
+    },
+    'work': {
+        'title': '<span>Trabajo seleccionado</span>Lo que entregamos',
+        'phrase': 'Productos reales que puedes probar hoy',
+        'p1': {
+            'title': 'P1 Express App',
+            'body': 'Nuestra app de planificación minimalista: offline-first, cero dependencias, filosofía en código. Un ejemplo real de Personal Software—herramientas hechas a la persona, no al revés.'
+        }
+    },
+    'footer': {
+        'blog': 'Nuestra visión de IA y software: <a class="nowrap" href="https://www.codigoergosum.com/blog/" target="_blank" rel="noopener">Código Ergo Sum</a>'
     },
     'action': {
-        'title': '¿Estás en busca de un equipo confiable para desarrollar su proyecto?',
+        'title': '¿Tienes un producto que vale la pena construir? Hablemos.',
         'msg': '¡Queremos conocer tu idea y ayudarte a hacerla realidad!'
     },
     'services': {
         'title': '<span>Servicios</span>Que hacemos',
         'phrase': 'Análisis, diseño, desarrollo, pruebas y despliegue',
         'dev': {
-            'title': 'Desarrollos Web/Móvil',
-            'body': 'Nos centramos en ofrecer soluciones modernas, utilizando las mejores prácticas y las tecnologías más reconocidas y actuales en el mercado.'
+            'title': 'Desarrollo Web/Móvil',
+            'body': 'Diseñamos, construimos y entregamos productos web y móviles con stacks modernos, entrega clara y código que tu equipo puede poseer.'
         },
         'design': {
-            'title': 'Diseño Web',
-            'body': 'Ve más allá de tener una simple página web, el diseño web moderno debe invitar a la interacción de tus productos y marcas con tu cliente.'
+            'title': 'UX/UI y Diseño Web',
+            'body': 'Interfaces que guían al usuario a la acción: investigación, wireframes y diseño visual enfocados en conversión, no solo en apariencia.'
         },
         'recruting': {
-            'title': 'Personal IT',
-            'body': 'Déjanos encargarnos de la búsqueda y gestión del talento para tus necesidades de desarrollo.'
-        },
-        'linux': {
-            'title': 'Soluciones en la Nube',
-            'body': 'Desde un entorno de TI gestionado localmente, mantenimiento de centros de datos en la nube o administrando servidores y aplicaciones virtuales, podemos ayudarte.'
-        },
-        'consulting': {
-            'title': 'Consultoría',
-            'body': 'Analizamos su modelo de negocio, a sus clientes, la competencia y todo lo que juegue un rol fundamental en su proyecto, para que como equipo llevarlo al éxito.'
+            'title': 'Reclutamiento IT',
+            'body': 'Buscamos, evaluamos y gestionamos el talento tech adecuado para tu equipo, desde desarrolladores hasta especialistas.'
         },
         'seo': {
-            'title': 'Optimización SEO',
-            'body': 'Te ayudamos a conseguir más ventas y dinero para su negocio, mejorando la visibilidad de su sitio web en los motores de búsqueda.'
+            'title': 'SEO y Visibilidad en Búsquedas IA',
+            'body': 'Sé encontrado en Google y en respuestas de IA: SEO técnico, estructura de contenido y métricas que convierten visibilidad en clientes.'
+        },
+        'ai': {
+            'title': 'Agentes y Automatizaciones IA',
+            'body': 'Chatbots, calificación de leads y automatizaciones de flujo integradas a tus herramientas, con supervisión humana en cada paso crítico.'
         },
     },
     'whyus': {
@@ -185,13 +221,29 @@ var es_locales = {
             'title': 'Tenemos mentalidad ágil',
             'body': 'Trabajamos con metodologías ágiles que garantizan entregas de funcionalidades en cada sprint de trabajo.'
         },
-        'dailies': {
-            'title': 'Reuniones diarias',
-            'body': 'Reuniones diarias con el equipo de desarrollo para comprobar el estado de cada tarea.'
+        'ai': {
+            'title': 'Entrega asistida por IA',
+            'body': 'Usamos IA para entregar más rápido; arquitectura, seguridad y QA quedan bajo revisión humana senior.'
         },
         'project': {
             'title': 'Estatus de Proyecto',
             'body': 'Validación continua del proyecto, incluyendo sus criterios como propietario del producto.'
+        },
+    },
+    'approach': {
+        'title': '<span>Nuestro enfoque</span>Conectamos negocio y código',
+        'phrase': 'Entre quienes sueñan y quienes hacen',
+        'purpose': {
+            'title': 'Primero el propósito',
+            'body': 'Empezamos por el por qué. Cada funcionalidad responde a una meta real del negocio—no a una lista de deseos.'
+        },
+        'bridge': {
+            'title': 'La visión encuentra la ejecución',
+            'body': 'Conectamos a las partes interesadas con los desarrolladores para que las ideas no se pierdan entre diapositivas y código.'
+        },
+        'together': {
+            'title': 'Negocio y código, juntos',
+            'body': 'Equipos alineados, propósito compartido y productos que hacen avanzar el negocio.'
         },
     },
     'team': {
@@ -199,17 +251,17 @@ var es_locales = {
         'phrase': 'Las caras detrás de nuestra firma',
         'asd': {
             'name': 'Asdrúbal Chirinos',
-            'role': 'CEO, Gerente de desarrollo',
+            'role': 'CEO y Fundador',
             'bio': 'Liderando equipos hacia el éxito. Consultor  y desarrollador Full Stack',
         },
         'fab': {
             'name': 'Fabiola Márquez',
-            'role': 'Gerente de reclutamiento',
+            'role': 'Líder de Talento',
             'bio': 'Reclutador de IT, especialista en adquisición de talentos',
         },
         'bea': {
             'name': 'Beatriz Márquez',
-            'role': 'Gerente de negocios',
+            'role': 'Líder de Negocios',
             'bio': 'Especialista en la gestión y seguimiento de proyectos',
         }
     },

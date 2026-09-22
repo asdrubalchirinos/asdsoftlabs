@@ -4411,3 +4411,7 @@ Version:	1.0
 .highlights {
     text-align: center;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
