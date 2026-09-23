@@ -1,0 +1,35 @@
+# Asdsoft Labs
+
+> Boutique senior product team. We bridge business and code: web and mobile development, IT recruiting, SEO, and AI agents & automations with human oversight. Based in Aguascalientes, Mexico.
+
+Key people: Asdrúbal Chirinos (CEO & Founder), Fabiola Márquez (Talent Lead), Beatriz Márquez (Business Lead).
+
+## Services
+
+- Web & mobile product development (modern stacks, code you own)
+- UX/UI & web design focused on conversion
+- IT recruiting: sourcing, screening, and managing tech talent
+- SEO & AI search visibility
+- AI agents & automations (chatbots, lead qualification, workflows) with human review on critical steps
+
+## Approach
+
+- Purpose first: we start with why; every feature traces back to a business goal
+- Vision meets execution: stakeholders and developers aligned
+- Business and code, together
+
+## Selected work
+
+- P1 Express App: minimalist, offline-first planning app (https://p1express.app)
+
+## Contact
+
+- Phone: +(52) 55 6482 3442
+- Location: Aguascalientes, Mexico
+- Web: https://www.asdsoftlabs.com/
+- X: https://twitter.com/asdsoftlabs
+
+## Optional
+
+- Blog (Spanglish, founder): https://www.codigoergosum.com/blog/
+- Philosophy (Spanish): https://achirinos.com/es/philosophy/

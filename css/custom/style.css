@@ -822,7 +822,7 @@ Version:	1.0
 /* Style Two */
 
 .hero-area.style2 {
-    background-image: url('../../images/world-map.png');
+    background-image: url('/images/world-map.png');
     background-size: contain;
     background-position: center;
     background-color: #fff;
@@ -3988,7 +3988,7 @@ Version:	1.0
 .pattern-1 {
     background-size: contain;
     /* background-repeat: no-repeat; */
-    background-image: url('../../images/bg-pattern/bg-pattern-1.png');
+    background-image: url('/images/bg-pattern/bg-pattern-1.png');
 }
 
 /* Contact Form */
@@ -4181,7 +4181,7 @@ Version:	1.0
 
 .footer {
     background-color: #2A2D2F;
-    background-image: url('../../images/world-map.png');
+    background-image: url('/images/world-map.png');
 }
 
 .footer .footer-top {
@@ -4410,4 +4410,43 @@ Version:	1.0
 
 .highlights {
     text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+#faq details {
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+#faq summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #353535;
+    list-style: none;
+}
+
+#faq summary::-webkit-details-marker {
+    display: none;
+}
+
+#faq summary::after {
+    content: '+';
+    float: right;
+    font-weight: 700;
+    color: #0098DA;
+}
+
+#faq details[open] summary::after {
+    content: '−';
+}
+
+#faq details p {
+    margin: 12px 0 0;
+    color: #666;
 }
